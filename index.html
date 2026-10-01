@@ -2,383 +2,1139 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="description"
-          content="CyberSafe Liberia - Cybersecurity awareness and digital safety education.">
+        content="CyberSafe Liberia - Cybersecurity awareness, education, reporting and digital safety.">
 
-    <title>CyberSafe Liberia | Cybersecurity Awareness</title>
+    <title>CyberSafe Liberia | Digital Security Platform</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
     <header class="navbar">
 
-        <div class="logo">
-            🛡️ CyberSafe Liberia
-        </div>
+        <a href="#home" class="brand">
 
-        <nav>
+            <div class="brand-logo">
+                <span>CS</span>
+            </div>
+
+            <div>
+                <strong>CyberSafe</strong>
+                <small>LIBERIA</small>
+            </div>
+
+        </a>
+
+        <nav class="navigation">
+
             <a href="#home">Home</a>
             <a href="#threats">Threats</a>
-            <a href="#safety">Safety Tips</a>
-            <a href="#quiz">Quiz</a>
+            <a href="#courses">Courses</a>
             <a href="#report">Report</a>
+            <a href="#dashboard">Dashboard</a>
+
         </nav>
+
+        <div class="nav-buttons">
+
+            <button class="login-button" onclick="openLogin()">
+                Login
+            </button>
+
+            <button class="register-button" onclick="openRegister()">
+                Create Account
+            </button>
+
+        </div>
 
     </header>
 
 
-    <!-- Hero Section -->
+    <!-- =========================
+         HERO
+    ========================== -->
 
-    <section id="home" class="hero">
+    <main id="home">
 
-        <div class="hero-content">
+        <section class="hero">
 
-            <p class="small-title">
-                CYBERSECURITY AWARENESS
-            </p>
+            <div class="hero-overlay"></div>
 
-            <h1>
-                Stay Safe in the
-                <span>Digital World</span>
-            </h1>
+            <div class="hero-content">
 
-            <p>
-                Learn how to protect your accounts, devices,
-                personal information, and digital identity from
-                common cyber threats.
-            </p>
-
-            <a href="#safety" class="button">
-                Learn How to Stay Safe
-            </a>
-
-        </div>
-
-    </section>
-
-
-    <!-- Introduction -->
-
-    <section class="intro">
-
-        <h2>Why Cybersecurity Matters in Liberia</h2>
-
-        <p>
-            Technology connects us to education, business,
-            government services, banking, communication, and
-            communities. But as our digital lives grow,
-            cyber threats also continue to evolve.
-        </p>
-
-        <p>
-            Cybersecurity awareness helps individuals and
-            organizations recognize threats and make safer
-            decisions online.
-        </p>
-
-    </section>
-
-
-    <!-- Threats -->
-
-    <section id="threats" class="section">
-
-        <h2>Common Cyber Threats</h2>
-
-        <p class="section-intro">
-            Understanding common threats is the first step
-            toward protecting yourself.
-        </p>
-
-
-        <div class="card-container">
-
-            <div class="card">
-
-                <div class="card-icon">
-                    🎣
+                <div class="security-label">
+                    ● CYBERSECURITY AWARENESS PLATFORM
                 </div>
 
-                <h3>Phishing</h3>
+                <h1>
+                    Defend Your
+                    <span>Digital World.</span>
+                </h1>
 
                 <p>
-                    Fake emails, messages, or websites designed
-                    to trick you into revealing passwords,
-                    financial information, or other sensitive data.
+                    CyberSafe Liberia helps individuals, students,
+                    businesses and organizations understand cyber
+                    threats, protect their information and respond
+                    to suspicious digital activity.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#courses" class="primary-button">
+                        Explore Courses
+                    </a>
+
+                    <a href="#report" class="secondary-button">
+                        Report an Incident
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>24/7</strong>
+                        <span>Awareness</span>
+                    </div>
+
+                    <div>
+                        <strong>10+</strong>
+                        <span>Learning Topics</span>
+                    </div>
+
+                    <div>
+                        <strong>🇱🇷</strong>
+                        <span>Built for Liberia</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SECURITY STATUS
+        ========================== -->
+
+        <section class="status-section">
+
+            <div class="status-card">
+
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>CyberSafe Security Center</strong>
+                    <p>Awareness services operational</p>
+                </div>
+
+            </div>
+
+            <div class="status-card">
+
+                <span class="status-icon">⚡</span>
+
+                <div>
+                    <strong>Threat Intelligence</strong>
+                    <p>Monitoring dashboard</p>
+                </div>
+
+            </div>
+
+            <div class="status-card">
+
+                <span class="status-icon">🔐</span>
+
+                <div>
+                    <strong>Digital Protection</strong>
+                    <p>Learn. Protect. Report.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+
+        <section class="about section">
+
+            <div class="section-heading">
+
+                <span>ABOUT CYBERSAFE LIBERIA</span>
+
+                <h2>
+                    Building a safer digital community
+                </h2>
+
+            </div>
+
+            <div class="about-grid">
+
+                <div>
+
+                    <p class="large-text">
+                        Cybersecurity is no longer only a technical
+                        issue. Every person who uses a phone,
+                        computer, social media, online banking or
+                        the internet has a role to play.
+                    </p>
+
+                    <p>
+                        CyberSafe Liberia provides cybersecurity
+                        awareness, online learning, incident
+                        reporting resources and practical digital
+                        safety information.
+                    </p>
+
+                    <a href="#courses" class="text-link">
+                        Start learning →
+                    </a>
+
+                </div>
+
+                <div class="about-box">
+
+                    <div class="shield-large">
+                        🛡️
+                    </div>
+
+                    <h3>
+                        Protect Your Digital Identity
+                    </h3>
+
+                    <p>
+                        Learn how to recognize phishing,
+                        protect accounts, secure social media
+                        and respond to cyber incidents.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             THREATS
+        ========================== -->
+
+        <section id="threats" class="threat-section section">
+
+            <div class="section-heading center">
+
+                <span>THREAT AWARENESS</span>
+
+                <h2>Know the threats</h2>
+
+                <p>
+                    Understanding how attacks work is an important
+                    part of protecting yourself.
                 </p>
 
             </div>
 
 
-            <div class="card">
+            <div class="threat-grid">
 
-                <div class="card-icon">
-                    🔑
-                </div>
+                <article class="threat-card">
 
-                <h3>Password Attacks</h3>
+                    <div class="threat-icon">🎣</div>
+
+                    <h3>Phishing</h3>
+
+                    <p>
+                        Fake emails, messages and websites designed
+                        to steal information.
+                    </p>
+
+                    <a href="#courses">Learn more →</a>
+
+                </article>
+
+
+                <article class="threat-card">
+
+                    <div class="threat-icon">🔑</div>
+
+                    <h3>Password Attacks</h3>
+
+                    <p>
+                        Attempts to guess, steal or reuse passwords
+                        to access accounts.
+                    </p>
+
+                    <a href="#courses">Learn more →</a>
+
+                </article>
+
+
+                <article class="threat-card">
+
+                    <div class="threat-icon">🦠</div>
+
+                    <h3>Malware</h3>
+
+                    <p>
+                        Malicious software that can damage systems
+                        or steal information.
+                    </p>
+
+                    <a href="#courses">Learn more →</a>
+
+                </article>
+
+
+                <article class="threat-card">
+
+                    <div class="threat-icon">📱</div>
+
+                    <h3>Social Engineering</h3>
+
+                    <p>
+                        Manipulating people into revealing information
+                        or taking unsafe actions.
+                    </p>
+
+                    <a href="#courses">Learn more →</a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             LIVE THREAT DASHBOARD
+        ========================== -->
+
+        <section class="live-section">
+
+            <div class="section-heading center">
+
+                <span>THREAT INTELLIGENCE</span>
+
+                <h2>Cyber Threat Dashboard</h2>
 
                 <p>
-                    Attackers may attempt to guess, steal,
-                    reuse, or crack passwords to gain access
-                    to accounts.
+                    A dedicated area for cyber-threat intelligence
+                    and security monitoring.
                 </p>
 
             </div>
 
 
-            <div class="card">
+            <div class="dashboard-preview">
 
-                <div class="card-icon">
-                    🦠
+                <div class="dashboard-top">
+
+                    <div>
+                        <span class="live-dot"></span>
+                        SECURITY MONITOR
+                    </div>
+
+                    <span id="dashboard-time">
+                        Updating...
+                    </span>
+
                 </div>
 
-                <h3>Malware</h3>
+
+                <div class="map-area">
+
+                    <div class="world-grid"></div>
+
+                    <div class="map-message">
+
+                        <div class="map-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            Live Threat Intelligence
+                        </h3>
+
+                        <p>
+                            Threat visualization will be
+                            connected to a live intelligence
+                            source in the next development phase.
+                        </p>
+
+                        <span class="coming-label">
+                            INTELLIGENCE MODULE
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="threat-metrics">
+
+                    <div>
+                        <span>NETWORK STATUS</span>
+                        <strong class="green">MONITORING</strong>
+                    </div>
+
+                    <div>
+                        <span>THREAT FEED</span>
+                        <strong>READY</strong>
+                    </div>
+
+                    <div>
+                        <span>LAST UPDATE</span>
+                        <strong id="last-update">--:--:--</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COURSES
+        ========================== -->
+
+        <section id="courses" class="courses section">
+
+            <div class="section-heading center">
+
+                <span>ONLINE LEARNING</span>
+
+                <h2>Cybersecurity Courses</h2>
 
                 <p>
-                    Malicious software can damage devices,
-                    steal information, spy on users, or
-                    disrupt systems.
+                    Build practical cybersecurity awareness one
+                    course at a time.
                 </p>
 
             </div>
 
 
-            <div class="card">
+            <div class="course-grid">
 
-                <div class="card-icon">
-                    📱
+
+                <article class="course-card">
+
+                    <div class="course-number">01</div>
+
+                    <span class="course-level">
+                        BEGINNER
+                    </span>
+
+                    <h3>
+                        Cybersecurity Awareness
+                    </h3>
+
+                    <p>
+                        Learn the basic principles of staying
+                        safe online.
+                    </p>
+
+                    <div class="course-info">
+                        <span>📚 6 Lessons</span>
+                        <span>⏱ 30 min</span>
+                    </div>
+
+                    <button onclick="startCourse('Cybersecurity Awareness')">
+                        Start Course
+                    </button>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-number">02</div>
+
+                    <span class="course-level">
+                        BEGINNER
+                    </span>
+
+                    <h3>
+                        Social Media Security
+                    </h3>
+
+                    <p>
+                        Protect Facebook, Instagram, WhatsApp
+                        and other social accounts.
+                    </p>
+
+                    <div class="course-info">
+                        <span>📚 5 Lessons</span>
+                        <span>⏱ 25 min</span>
+                    </div>
+
+                    <button onclick="startCourse('Social Media Security')">
+                        Start Course
+                    </button>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-number">03</div>
+
+                    <span class="course-level">
+                        BEGINNER
+                    </span>
+
+                    <h3>
+                        Phishing & Online Fraud
+                    </h3>
+
+                    <p>
+                        Identify suspicious messages, links,
+                        websites and online scams.
+                    </p>
+
+                    <div class="course-info">
+                        <span>📚 7 Lessons</span>
+                        <span>⏱ 35 min</span>
+                    </div>
+
+                    <button onclick="startCourse('Phishing & Online Fraud')">
+                        Start Course
+                    </button>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-number">04</div>
+
+                    <span class="course-level">
+                        INTERMEDIATE
+                    </span>
+
+                    <h3>
+                        Account Security
+                    </h3>
+
+                    <p>
+                        Learn about passwords, MFA, account
+                        recovery and identity protection.
+                    </p>
+
+                    <div class="course-info">
+                        <span>📚 8 Lessons</span>
+                        <span>⏱ 40 min</span>
+                    </div>
+
+                    <button onclick="startCourse('Account Security')">
+                        Start Course
+                    </button>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-number">05</div>
+
+                    <span class="course-level">
+                        BEGINNER
+                    </span>
+
+                    <h3>
+                        Mobile & Online Safety
+                    </h3>
+
+                    <p>
+                        Practical protection for smartphones,
+                        apps, Wi-Fi and online services.
+                    </p>
+
+                    <div class="course-info">
+                        <span>📚 6 Lessons</span>
+                        <span>⏱ 30 min</span>
+                    </div>
+
+                    <button onclick="startCourse('Mobile & Online Safety')">
+                        Start Course
+                    </button>
+
+                </article>
+
+
+                <article class="course-card">
+
+                    <div class="course-number">06</div>
+
+                    <span class="course-level">
+                        INTERMEDIATE
+                    </span>
+
+                    <h3>
+                        Introduction to Cybersecurity
+                    </h3>
+
+                    <p>
+                        Explore networks, threats, security
+                        controls and cybersecurity careers.
+                    </p>
+
+                    <div class="course-info">
+                        <span>📚 10 Lessons</span>
+                        <span>⏱ 60 min</span>
+                    </div>
+
+                    <button onclick="startCourse('Introduction to Cybersecurity')">
+                        Start Course
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             REPORT
+        ========================== -->
+
+        <section id="report" class="report-section">
+
+            <div class="report-content">
+
+                <div class="report-text">
+
+                    <span>CYBER INCIDENT REPORTING</span>
+
+                    <h2>
+                        See something suspicious?
+                    </h2>
+
+                    <p>
+                        Use our reporting form to document a
+                        suspected phishing attempt, online fraud,
+                        compromised account, malware incident or
+                        other suspicious digital activity.
+                    </p>
+
+                    <div class="report-points">
+
+                        <div>✓ Document what happened</div>
+
+                        <div>✓ Provide relevant details</div>
+
+                        <div>✓ Avoid sharing passwords</div>
+
+                        <div>✓ Preserve available evidence</div>
+
+                    </div>
+
                 </div>
 
-                <h3>Social Engineering</h3>
+
+                <form id="reportForm" class="report-form">
+
+                    <h3>
+                        Submit an Incident Report
+                    </h3>
+
+                    <label>
+                        Your Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="reportName"
+                        placeholder="Enter your name"
+                        required
+                    >
+
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="reportEmail"
+                        placeholder="Enter your email"
+                        required
+                    >
+
+
+                    <label>
+                        Incident Type
+                    </label>
+
+                    <select id="incidentType" required>
+
+                        <option value="">
+                            Select incident type
+                        </option>
+
+                        <option>
+                            Phishing
+                        </option>
+
+                        <option>
+                            Online Fraud
+                        </option>
+
+                        <option>
+                            Account Compromise
+                        </option>
+
+                        <option>
+                            Malware
+                        </option>
+
+                        <option>
+                            Social Media Abuse
+                        </option>
+
+                        <option>
+                            Other
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        What happened?
+                    </label>
+
+                    <textarea
+                        id="reportDetails"
+                        rows="5"
+                        placeholder="Describe the incident..."
+                        required
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Submit Report
+                    </button>
+
+                    <p id="reportResult"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             USER DASHBOARD
+        ========================== -->
+
+        <section id="dashboard" class="dashboard-section section">
+
+            <div class="section-heading center">
+
+                <span>YOUR SECURITY CENTER</span>
+
+                <h2>User Dashboard</h2>
 
                 <p>
-                    Attackers manipulate people into taking
-                    actions that compromise their security.
+                    Your future personal cybersecurity learning
+                    and reporting center.
                 </p>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="user-dashboard">
+
+                <div class="dashboard-welcome">
+
+                    <div class="user-avatar">
+                        👤
+                    </div>
+
+                    <div>
+
+                        <span>WELCOME</span>
+
+                        <h3 id="dashboard-user">
+                            Guest User
+                        </h3>
+
+                        <p>
+                            CyberSafe Community Member
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-    <!-- Safety Tips -->
+                <div class="dashboard-cards">
 
-    <section id="safety" class="section safety-section">
+                    <div class="mini-dashboard-card">
 
-        <h2>10 Cybersecurity Safety Tips</h2>
+                        <span>🎓</span>
 
-        <div class="tips">
+                        <strong id="course-count">
+                            0
+                        </strong>
 
-            <div class="tip">
-                <strong>01</strong>
-                <p>Use strong and unique passwords for important accounts.</p>
+                        <small>
+                            Courses Started
+                        </small>
+
+                    </div>
+
+
+                    <div class="mini-dashboard-card">
+
+                        <span>📝</span>
+
+                        <strong id="report-count">
+                            0
+                        </strong>
+
+                        <small>
+                            Reports Submitted
+                        </small>
+
+                    </div>
+
+
+                    <div class="mini-dashboard-card">
+
+                        <span>🛡️</span>
+
+                        <strong>
+                            Active
+                        </strong>
+
+                        <small>
+                            Security Status
+                        </small>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="tip">
-                <strong>02</strong>
-                <p>Enable multi-factor authentication whenever possible.</p>
+        </section>
+
+
+        <!-- =========================
+             CHAT
+        ========================== -->
+
+        <section class="chat-section">
+
+            <div>
+
+                <span>CYBERSAFE SUPPORT</span>
+
+                <h2>
+                    Need cybersecurity guidance?
+                </h2>
+
+                <p>
+                    Our future support system will allow users
+                    to connect with cybersecurity awareness
+                    support through live chat.
+                </p>
+
             </div>
 
-            <div class="tip">
-                <strong>03</strong>
-                <p>Do not click suspicious links or unexpected attachments.</p>
-            </div>
-
-            <div class="tip">
-                <strong>04</strong>
-                <p>Keep your operating system and applications updated.</p>
-            </div>
-
-            <div class="tip">
-                <strong>05</strong>
-                <p>Be careful when using public Wi-Fi networks.</p>
-            </div>
-
-            <div class="tip">
-                <strong>06</strong>
-                <p>Back up important files regularly.</p>
-            </div>
-
-            <div class="tip">
-                <strong>07</strong>
-                <p>Verify unexpected requests for money or sensitive information.</p>
-            </div>
-
-            <div class="tip">
-                <strong>08</strong>
-                <p>Review your privacy and security settings.</p>
-            </div>
-
-            <div class="tip">
-                <strong>09</strong>
-                <p>Lock your devices when you are not using them.</p>
-            </div>
-
-            <div class="tip">
-                <strong>10</strong>
-                <p>Report suspicious activity instead of ignoring it.</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- Phishing Awareness -->
-
-    <section class="phishing">
-
-        <div>
-
-            <h2>
-                Stop. Think. Verify.
-            </h2>
-
-            <p>
-                Before clicking a link, opening an attachment,
-                sending money, or sharing sensitive information,
-                take a moment to verify the request.
-            </p>
-
-        </div>
-
-        <div class="phishing-check">
-
-            <h3>Ask yourself:</h3>
-
-            <ul>
-                <li>Do I know the sender?</li>
-                <li>Was I expecting this message?</li>
-                <li>Is the website address correct?</li>
-                <li>Is the request creating unnecessary urgency?</li>
-                <li>Can I verify the request another way?</li>
-            </ul>
-
-        </div>
-
-    </section>
-
-
-    <!-- Quiz -->
-
-    <section id="quiz" class="section quiz-section">
-
-        <h2>Cybersecurity Awareness Quiz</h2>
-
-        <div class="quiz-box">
-
-            <h3>
-                Which action is safest when you receive
-                an unexpected email asking for your password?
-            </h3>
-
-            <button onclick="checkAnswer('wrong')">
-                A. Send the password immediately
+            <button onclick="openChat()">
+                💬 Open Live Chat
             </button>
 
-            <button onclick="checkAnswer('correct')">
-                B. Verify the sender and avoid the suspicious link
-            </button>
-
-            <button onclick="checkAnswer('wrong')">
-                C. Forward your password to the sender
-            </button>
-
-            <button onclick="checkAnswer('wrong')">
-                D. Click every link in the email
-            </button>
-
-            <p id="quiz-result"></p>
-
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- Incident Response -->
-
-    <section class="incident">
-
-        <h2>Think You Have Been Hacked?</h2>
-
-        <ol>
-
-            <li>
-                Disconnect the affected device from the network
-                if appropriate.
-            </li>
-
-            <li>
-                Change compromised passwords from a trusted device.
-            </li>
-
-            <li>
-                Enable multi-factor authentication.
-            </li>
-
-            <li>
-                Check your accounts for unauthorized activity.
-            </li>
-
-            <li>
-                Preserve relevant evidence and report the incident
-                to the appropriate organization or authority.
-            </li>
-
-        </ol>
-
-    </section>
+    </main>
 
 
-    <!-- Report Section -->
-
-    <section id="report" class="report">
-
-        <h2>Report Suspicious Activity</h2>
-
-        <p>
-            If you encounter suspicious online activity,
-            phishing, fraud, malware, or another cyber incident,
-            document what happened and report it through the
-            appropriate organizational or national channel.
-        </p>
-
-        <button onclick="showMessage()">
-            Report Awareness Message
-        </button>
-
-        <p id="report-message"></p>
-
-    </section>
-
-
-    <!-- Footer -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
 
-        <h3>🛡️ CyberSafe Liberia</h3>
+        <div class="footer-grid">
 
-        <p>
-            Building a safer and more digitally aware community.
-        </p>
+            <div>
 
-        <p>
-            © 2026 CyberSafe Liberia
-        </p>
+                <div class="footer-brand">
+                    🛡️ CyberSafe Liberia
+                </div>
+
+                <p>
+                    Building a safer and more digitally
+                    aware Liberia.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h4>Platform</h4>
+
+                <a href="#courses">Courses</a>
+                <a href="#threats">Threats</a>
+                <a href="#report">Report Incident</a>
+                <a href="#dashboard">Dashboard</a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Connect</h4>
+
+                <a href="#" onclick="socialMessage('Facebook')">
+                    Facebook
+                </a>
+
+                <a href="#" onclick="socialMessage('Instagram')">
+                    Instagram
+                </a>
+
+                <a href="#" onclick="socialMessage('WhatsApp')">
+                    WhatsApp
+                </a>
+
+                <a href="#" onclick="socialMessage('X')">
+                    X / Twitter
+                </a>
+
+            </div>
+
+
+            <div>
+
+                <h4>Security</h4>
+
+                <a href="#threats">Threat Awareness</a>
+                <a href="#courses">Online Safety</a>
+                <a href="#report">Incident Reporting</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 CyberSafe Liberia. All rights reserved.
+            </p>
+
+            <p>
+                Learn • Protect • Report
+            </p>
+
+        </div>
 
     </footer>
+
+
+    <!-- =========================
+         LOGIN MODAL
+    ========================== -->
+
+    <div id="loginModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-button" onclick="closeLogin()">
+                ×
+            </button>
+
+            <div class="modal-logo">
+                🛡️
+            </div>
+
+            <h2>
+                Welcome Back
+            </h2>
+
+            <p>
+                Sign in to your CyberSafe account.
+            </p>
+
+            <form id="loginForm">
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Email address"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Password"
+                    required
+                >
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <p id="loginResult"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         REGISTER MODAL
+    ========================== -->
+
+    <div id="registerModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="close-button" onclick="closeRegister()">
+                ×
+            </button>
+
+            <div class="modal-logo">
+                🛡️
+            </div>
+
+            <h2>
+                Create Your Account
+            </h2>
+
+            <p>
+                Join the CyberSafe Liberia community.
+            </p>
+
+            <form id="registerForm">
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Full name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Email address"
+                    required
+                >
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Create password"
+                    required
+                >
+
+                <button type="submit">
+                    Create Account
+                </button>
+
+            </form>
+
+            <p id="registerResult"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         CHAT MODAL
+    ========================== -->
+
+    <div id="chatModal" class="modal">
+
+        <div class="chat-window">
+
+            <button class="close-button" onclick="closeChat()">
+                ×
+            </button>
+
+            <div class="chat-header">
+
+                <div class="chat-avatar">
+                    🛡️
+                </div>
+
+                <div>
+
+                    <strong>
+                        CyberSafe Support
+                    </strong>
+
+                    <small>
+                        Online awareness support
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message received">
+
+                    Hello! Welcome to CyberSafe Liberia.
+                    How can we help you?
+
+                </div>
+
+            </div>
+
+
+            <form id="chatForm" class="chat-input">
+
+                <input
+                    type="text"
+                    id="chatText"
+                    placeholder="Type your message..."
+                    required
+                >
+
+                <button type="submit">
+                    Send
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <div id="toast" class="toast"></div>
 
 
     <script src="script.js"></script>
